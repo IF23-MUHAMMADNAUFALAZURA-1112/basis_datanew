@@ -10,10 +10,6 @@
 
 <body>
     <div class="container">
-        <header class="header">
-            <h1 class="judul">Tugas Basis Data</h1>
-
-        </header>
 
         <div class="hero"></div>
 
@@ -93,7 +89,7 @@
                 <!-- Tugas Pertemuan Ke-2 -->
                 <div class="card">
                     <div class="card-header">
-                        <h3>Tugas Pertemuan Ke-2</h3>
+                        <h3>Pertemuan Ke-2</h3>
                     </div>
                     <div class="card-body">
                         <h3>1. ERD Workbench</h3>
@@ -117,148 +113,133 @@
                     </div>
                 </div>
 
-               <!-- Pertemuan Ke-2 -->
-<div class="card">
-    <div class="card-header">
-        <h3>Pertemuan Ke-2</h3>
-    </div>
-    <div class="card-body">
-        <!-- Entitas -->
-        <h3>1. Entitas</h3>
-        <p class="indent">
-            Entitas adalah objek atau konsep dalam dunia nyata yang ingin kita simpan informasinya dalam
-            basis data. Setiap entitas mewakili sesuatu yang memiliki eksistensi yang nyata atau dapat
-            dikenali dalam sistem. Dalam ERD, entitas digambarkan dengan bentuk persegi panjang. Entitas
-            memiliki identitas unik yang membedakannya dari entitas lainnya dan dapat berinteraksi
-            dengan entitas lain melalui relasi.
-        </p>
-
-      <!-- Menyisipkan Gambar Entitas -->
-<div class="image-container">
-    <img src="basisdata/kent.png" alt="Gambar Entitas">
-</div>
-
-        <p class="indent">
-            Contoh entitas dalam sistem informasi bisa berupa Mahasiswa, Dosen, Mata Kuliah, dan
-            sebagainya. Misalnya, dalam sistem informasi akademik, entitas Mahasiswa memiliki identitas
-            unik seperti NIM (Nomor Induk Mahasiswa), yang membedakannya dari mahasiswa lain. Dosen juga
-            merupakan entitas dengan atribut seperti ID Dosen dan Nama Dosen.
-        </p>
-
-        <!-- Atribut -->
-        <h3>2. Atribut</h3>
-        <p class="indent">
-            Atribut adalah karakteristik atau informasi yang terkait dengan entitas. Atribut memberikan
-            penjelasan lebih rinci tentang entitas tersebut dan menggambarkan properti atau sifat dari
-            entitas. Dalam ERD, atribut biasanya digambarkan dengan bentuk oval atau lingkaran, dan
-            dihubungkan ke entitas dengan garis.
-        </p>
-
-        <p class="indent">
-            Contoh atribut dari entitas Mahasiswa antara lain:
-            <ul>
-                <li> <strong>Nama</strong>: Menyimpan nama lengkap mahasiswa.</li>
-                <li> <strong>NIM</strong>: Nomor identifikasi unik yang diberikan kepada setiap mahasiswa.
-                </li>
-                <li> <strong>Alamat</strong>: Alamat tempat tinggal mahasiswa.</li>
-                <li> <strong>Tanggal Lahir</strong>: Tanggal lahir mahasiswa.</li>
-            </ul>
-            Atribut ini mendeskripsikan lebih detail tentang setiap mahasiswa dalam sistem, memungkinkan
-            kita untuk menyimpan informasi penting yang berhubungan dengan mereka.
-        </p>
-
-        <!-- Relasi -->
-        <h3>3. Relasi</h3>
-        <p class="indent">
-            Relasi menggambarkan hubungan antara dua atau lebih entitas dalam basis data. Relasi ini
-            menunjukkan bagaimana entitas satu berinteraksi atau terhubung dengan entitas lain dalam
-            sistem. Dalam ERD, relasi biasanya digambarkan dengan bentuk wajik atau diamond, dan
-            dihubungkan dengan entitas yang berhubungan.
-        </p>
-
-        <p class="indent">
-            Contoh relasi antara entitas Mahasiswa dan Mata Kuliah adalah relasi **"Mengambil"**. Relasi
-            ini menunjukkan bahwa seorang mahasiswa dapat mengambil banyak mata kuliah, dan satu mata
-            kuliah dapat diambil oleh banyak mahasiswa. Relasi ini bersifat banyak-ke-banyak
-            (many-to-many). Relasi ini penting untuk menggambarkan bagaimana entitas saling terhubung,
-            serta bagaimana data dapat diproses atau dimanipulasi dalam sistem.
-        </p>
-    </div>
-</div>
-
-
-                <!-- Tugas Pertemuan Ke-3 -->
+                <!-- Pertemuan Ke-3 -->
                 <div class="card">
                     <div class="card-header">
-                        <h3>Tugas Pertemuan Ke-3</h3>
+                        <h3>Pertemuan Ke-3</h3>
                     </div>
                     <div class="card-body">
-                        <h3>1. Apa itu PrimaryKey, Foregent Key dan
-                            Candidate Key </h3>
-                            <div class="image-text-container">
-                                <p class="indent">
-                                    <strong>Primary Key (PK)</strong> adalah atribut dalam sebuah tabel yang digunakan untuk mengidentifikasi setiap record atau entitas secara unik. Nilai dalam primary key harus unik dan tidak boleh NULL.
-                                    <br><strong>Contoh:</strong>
-                                    1. Tabel Mahasiswa: `NIM` (Nomor Induk Mahasiswa).<br>
-                                    2. Tabel Produk: `Product_ID`.<br>
-                                    3. Tabel Pegawai: `Employee_ID`.<br>
-                                    4. Tabel Buku: `ISBN`.<br>
-                                    5. Tabel Pelanggan: `Customer_ID`.<br><br>
-                                    
-                                    <strong>Foreign Key (FK)</strong> adalah atribut dalam sebuah tabel yang merujuk pada primary key di tabel lain untuk membangun hubungan antar entitas.
-                                    <br><strong>Contoh:</strong>
-                                    1. Tabel Pesanan: `Customer_ID` merujuk ke tabel Pelanggan.<br>
-                                    2. Tabel Detail_Pesanan: `Product_ID` merujuk ke tabel Produk.<br>
-                                    3. Tabel Transaksi: `Employee_ID` merujuk ke tabel Pegawai.<br>
-                                    4. Tabel Buku_Pinjam: `Member_ID` merujuk ke tabel Anggota.<br>
-                                    5. Tabel Pengiriman: `Order_ID` merujuk ke tabel Pesanan.<br><br>
-                            
-                                    <strong>Candidate Key</strong> adalah satu atau lebih atribut yang dapat mengidentifikasi setiap record secara unik dalam tabel. Sebuah tabel bisa memiliki lebih dari satu candidate key.
-                                    <br><strong>Contoh:</strong>
-                                    1. Tabel Mahasiswa: `NIM` dan `Email`.<br>
-                                    2. Tabel Produk: `Product_ID` dan `Serial_Number`.<br>
-                                    3. Tabel Pegawai: `Employee_ID` dan `SSN`.<br>
-                                    4. Tabel Buku: `ISBN` dan `Title`.<br>
-                                    5. Tabel Pelanggan: `Customer_ID` dan `Phone_Number`.<br><br>
-                            
-                                    <strong>Relation</strong> pada ERD adalah hubungan antara dua entitas. Hubungan ini dapat berupa one-to-one, one-to-many, atau many-to-many.
-                                    <br><strong>Contoh:</strong>
-                                    1. One-to-One: Setiap Mahasiswa hanya memiliki satu NIM.<br>
-                                    2. One-to-Many: Seorang Mahasiswa dapat memiliki banyak Mata Kuliah.<br>
-                                    3. Many-to-Many: Seorang Mahasiswa dapat mengambil banyak Mata Kuliah, dan Mata Kuliah dapat diambil oleh banyak Mahasiswa.<br><br>
-                            
-                                    <strong>Many-to-Many</strong> tidak baik digunakan dalam ERD karena bisa menambah kompleksitas. Biasanya, hubungan ini dipisahkan dengan tabel penghubung (junction table).
-                                </p>
-                            </div>
-                            
-                            <div class="image-text-container">
-                                <p class="indent">
-                                    <strong>ERD Workbench</strong> adalah alat yang digunakan untuk merancang dan memvisualisasikan struktur basis data. Berikut adalah contoh ilustrasi ERD yang dibuat dengan MySQL Workbench.
-                                </p>
-                                <img src="basisdata/case.png" alt="Ilustrasi ERD Workbench" style="display: block; margin-left: auto; margin-right: auto;">
-                            </div>
-                            
+                        <!-- Entitas -->
+                        <h3>1. Entitas</h3>
+                        <p class="indent">
+                            Entitas adalah objek atau konsep dalam dunia nyata yang ingin kita simpan informasinya dalam
+                            basis data. Setiap entitas mewakili sesuatu yang memiliki eksistensi yang nyata atau dapat
+                            dikenali dalam sistem. Dalam ERD, entitas digambarkan dengan bentuk persegi panjang. Entitas
+                            memiliki identitas unik yang membedakannya dari entitas lainnya dan dapat berinteraksi
+                            dengan entitas lain melalui relasi.
+                        </p>
+
+                        <!-- Menyisipkan Gambar Entitas -->
+                        <div class="image-container">
+                            <img src="basisdata/kent.png" alt="Gambar Entitas">
                         </div>
+
+                        <p class="indent">
+                            Contoh entitas dalam sistem informasi bisa berupa Mahasiswa, Dosen, Mata Kuliah, dan
+                            sebagainya. Misalnya, dalam sistem informasi akademik, entitas Mahasiswa memiliki identitas
+                            unik seperti NIM (Nomor Induk Mahasiswa), yang membedakannya dari mahasiswa lain. Dosen juga
+                            merupakan entitas dengan atribut seperti ID Dosen dan Nama Dosen.
+                        </p>
+
+                        <!-- Atribut -->
+                        <h3>2. Atribut</h3>
+                        <p class="indent">
+                            Atribut adalah karakteristik atau informasi yang terkait dengan entitas. Atribut memberikan
+                            penjelasan lebih rinci tentang entitas tersebut dan menggambarkan properti atau sifat dari
+                            entitas. Dalam ERD, atribut biasanya digambarkan dengan bentuk oval atau lingkaran, dan
+                            dihubungkan ke entitas dengan garis.
+                        </p>
+
+                        <p class="indent">
+                            Contoh atribut dari entitas Mahasiswa antara lain:
+                        <ul>
+                            <li> <strong>Nama</strong>: Menyimpan nama lengkap mahasiswa.</li>
+                            <li> <strong>NIM</strong>: Nomor identifikasi unik yang diberikan kepada setiap mahasiswa.
+                            </li>
+                            <li> <strong>Alamat</strong>: Alamat tempat tinggal mahasiswa.</li>
+                            <li> <strong>Tanggal Lahir</strong>: Tanggal lahir mahasiswa.</li>
+                        </ul>
+                        Atribut ini mendeskripsikan lebih detail tentang setiap mahasiswa dalam sistem, memungkinkan
+                        kita untuk menyimpan informasi penting yang berhubungan dengan mereka.
+                        </p>
+
+                        <!-- Relasi -->
+                        <h3>3. Relasi</h3>
+                        <p class="indent">
+                            Relasi menggambarkan hubungan antara dua atau lebih entitas dalam basis data. Relasi ini
+                            menunjukkan bagaimana entitas satu berinteraksi atau terhubung dengan entitas lainnya dalam
+                            konteks dunia nyata. Relasi dalam ERD digambarkan dengan garis yang menghubungkan entitas
+                            yang terkait.
+                            <a href="https://youtu.be/y5EI77kkfXM?si=l2fDYb64W1fNMwiG" target="_blank">Contoh penerapan
+                                ERD Dosen dan Mahasiswa
+                                klik di sini</a>
+                        </p>
                     </div>
                 </div>
 
-            </section>
+                <!-- Pertemuan Ke-4 -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Tugas Pertemuan Ke-4</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3>1. Normalisasi Basis Data</h3>
+                        <div class="image-text">
+                            <p class="indent">
+                                <br>
+                                <strong>Normalisasi</strong> dalam konteks Entity-Relationship Diagram (ERD) adalah
+                                proses desain basis data yang digunakan untuk mengorganisir tabel-tabel dan mengurangi
+                                redundansi data. Tujuan normalisasi adalah menghasilkan skema basis data yang optimal,
+                                efisien, dan bebas dari anomali atau ketidakkonsistenan data. Normalisasi membantu
+                                memastikan bahwa basis data memiliki struktur yang baik, memungkinkan operasi
+                                pengaksesan dan manipulasi data yang cepat, serta menghindari masalah seperti redundant
+                                data dan anomali pembaruan (update), penghapusan (delete), atau penyisipan (insert)
+                                data.<a href="https://youtu.be/R6bJjcXc7bY?feature=shared" target="_blank">Contoh
+                                    penerapan ERD intersection
+                                    klik di sini</a>.
+                            </p>
+                            <br>
+                            <!-- Menyisipkan gambar untuk normalisasi -->
+                            <figure style="text-align: center;">
+                                <img src="basisdata/erd_intersection.png" alt="Ilustrasi Normalisasi Basis Data"
+                                    style="width: 30%; height: auto; display: block; margin: 0 auto;">
+                                <figcaption style="font-size: 14px; color: #555; margin-top: 10px;">Gambar ERD
+                                    Intersection</figcaption>
+                            </figure>
+                        </section>
+
+                <!-- Pertemuan Ke-5 -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Tugas Pertemuan Ke-5</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3>1. Pengertian Denormalisasi</h3>
+                        <div class="image-text">
+                            <p class="indent">
+                                <br>
+                                <strong>Denormalisasi</strong> adalah kebalikan dari proses normalisasi. Dimana denormalisasi adalah proses yang dilakukan pada basis data yang sudah di normalisasi, 
+                                dengan cara memodifikasi suatu tatanan basis data dan mengabaikan kerangkapan data untuk meningkatkan kinerja basis data. Pada satu sisi denormalisasi dapat menyebabkan redundansi yang lebih besar, bahkan dapat mengurangi fleksibilitas basis data untuk perkembangan penggunaan di masa yang akan datang.
+                                Namun denormalisasi juga dapat mempercepat pemanggilan data, meskipun dapat memperlambat proses update data.<a href="https://youtu.be/R6bJjcXc7bY?feature=shared" target="_blank">Contoh
+                                penerapan ERD intersection
+                                klik di sini</a>.
+                            </p>
+                            <br>
+                            <!-- Menyisipkan gambar untuk normalisasi -->
+                            <figure style="text-align: center;">
+                                <img src="basisdata/denormalisasi.png" alt="Ilustrasi Normalisasi Basis Data"
+                                    style="width: 30%; height: auto; display: block; margin: 0 auto;">
+                                <figcaption style="font-size: 14px; color: #555; margin-top: 10px;">Gambar ERD
+                                    Intersection</figcaption>
+                            </figure>
+
+            
         </main>
-
-        <footer>
-            © Copyright 2024. Muhammad Naufal Azura All rights reserved.
-        </footer>
     </div>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
 </body>
+
+<footer>
+    © Copyright 2024. Muhammad Naufal Azura
+</footer>
 
 </html>
