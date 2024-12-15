@@ -112,71 +112,80 @@
                                     href="https://youtu.be/N6ihr_Hp_zo?feature=shared" target="_blank">tutorial
                                     inisialisasi ERD di sini</a>.
                             </p>
-                            <img src="basisdata/basisdata.png" alt="Ilustrasi ERD Workbench">
+                            <img src="basisdata/erd dosen_mahasiswa - Copy.png" alt="Ilustrasi ERD Workbench">
                         </div>
                     </div>
                 </div>
 
-                <!-- Pertemuan Ke-2 -->
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Pertemuan Ke-2</h3>
-                    </div>
-                    <div class="card-body">
-                        <!-- Entitas -->
-                        <h3>1. Entitas</h3>
-                        <p class="indent">
-                            Entitas adalah objek atau konsep dalam dunia nyata yang ingin kita simpan informasinya dalam
-                            basis data. Setiap entitas mewakili sesuatu yang memiliki eksistensi yang nyata atau dapat
-                            dikenali dalam sistem. Dalam ERD, entitas digambarkan dengan bentuk persegi panjang. Entitas
-                            memiliki identitas unik yang membedakannya dari entitas lainnya dan dapat berinteraksi
-                            dengan entitas lain melalui relasi.
-                        </p>
-                        <p class="indent">
-                            Contoh entitas dalam sistem informasi bisa berupa Mahasiswa, Dosen, Mata Kuliah, dan
-                            sebagainya. Misalnya, dalam sistem informasi akademik, entitas Mahasiswa memiliki identitas
-                            unik seperti NIM (Nomor Induk Mahasiswa), yang membedakannya dari mahasiswa lain. Dosen juga
-                            merupakan entitas dengan atribut seperti ID Dosen dan Nama Dosen.
-                        </p>
+               <!-- Pertemuan Ke-2 -->
+<div class="card">
+    <div class="card-header">
+        <h3>Pertemuan Ke-2</h3>
+    </div>
+    <div class="card-body">
+        <!-- Entitas -->
+        <h3>1. Entitas</h3>
+        <p class="indent">
+            Entitas adalah objek atau konsep dalam dunia nyata yang ingin kita simpan informasinya dalam
+            basis data. Setiap entitas mewakili sesuatu yang memiliki eksistensi yang nyata atau dapat
+            dikenali dalam sistem. Dalam ERD, entitas digambarkan dengan bentuk persegi panjang. Entitas
+            memiliki identitas unik yang membedakannya dari entitas lainnya dan dapat berinteraksi
+            dengan entitas lain melalui relasi.
+        </p>
 
-                        <!-- Atribut -->
-                        <h3>2. Atribut</h3>
-                        <p class="indent">
-                            Atribut adalah karakteristik atau informasi yang terkait dengan entitas. Atribut memberikan
-                            penjelasan lebih rinci tentang entitas tersebut dan menggambarkan properti atau sifat dari
-                            entitas. Dalam ERD, atribut biasanya digambarkan dengan bentuk oval atau lingkaran, dan
-                            dihubungkan ke entitas dengan garis.
-                        </p>
-                        <p class="indent">
-                            Contoh atribut dari entitas Mahasiswa antara lain:
-                        <ul>
-                            <li> <strong>Nama</strong>: Menyimpan nama lengkap mahasiswa.</li>
-                            <li> <strong>NIM</strong>: Nomor identifikasi unik yang diberikan kepada setiap mahasiswa.
-                            </li>
-                            <li> <strong>Alamat</strong>: Alamat tempat tinggal mahasiswa.</li>
-                            <li> <strong>Tanggal Lahir</strong>: Tanggal lahir mahasiswa.</li>
-                        </ul>
-                        Atribut ini mendeskripsikan lebih detail tentang setiap mahasiswa dalam sistem, memungkinkan
-                        kita untuk menyimpan informasi penting yang berhubungan dengan mereka.
-                        </p>
+      <!-- Menyisipkan Gambar Entitas -->
+<div class="image-container">
+    <img src="basisdata/kent.png" alt="Gambar Entitas">
+</div>
 
-                        <!-- Relasi -->
-                        <h3>3. Relasi</h3>
-                        <p class="indent">
-                            Relasi menggambarkan hubungan antara dua atau lebih entitas dalam basis data. Relasi ini
-                            menunjukkan bagaimana entitas satu berinteraksi atau terhubung dengan entitas lain dalam
-                            sistem. Dalam ERD, relasi biasanya digambarkan dengan bentuk wajik atau diamond, dan
-                            dihubungkan dengan entitas yang berhubungan.
-                        </p>
-                        <p class="indent">
-                            Contoh relasi antara entitas Mahasiswa dan Mata Kuliah adalah relasi **"Mengambil"**. Relasi
-                            ini menunjukkan bahwa seorang mahasiswa dapat mengambil banyak mata kuliah, dan satu mata
-                            kuliah dapat diambil oleh banyak mahasiswa. Relasi ini bersifat banyak-ke-banyak
-                            (many-to-many). Relasi ini penting untuk menggambarkan bagaimana entitas saling terhubung,
-                            serta bagaimana data dapat diproses atau dimanipulasi dalam sistem.
-                        </p>
-                    </div>
-                </div>
+        <p class="indent">
+            Contoh entitas dalam sistem informasi bisa berupa Mahasiswa, Dosen, Mata Kuliah, dan
+            sebagainya. Misalnya, dalam sistem informasi akademik, entitas Mahasiswa memiliki identitas
+            unik seperti NIM (Nomor Induk Mahasiswa), yang membedakannya dari mahasiswa lain. Dosen juga
+            merupakan entitas dengan atribut seperti ID Dosen dan Nama Dosen.
+        </p>
+
+        <!-- Atribut -->
+        <h3>2. Atribut</h3>
+        <p class="indent">
+            Atribut adalah karakteristik atau informasi yang terkait dengan entitas. Atribut memberikan
+            penjelasan lebih rinci tentang entitas tersebut dan menggambarkan properti atau sifat dari
+            entitas. Dalam ERD, atribut biasanya digambarkan dengan bentuk oval atau lingkaran, dan
+            dihubungkan ke entitas dengan garis.
+        </p>
+
+        <p class="indent">
+            Contoh atribut dari entitas Mahasiswa antara lain:
+            <ul>
+                <li> <strong>Nama</strong>: Menyimpan nama lengkap mahasiswa.</li>
+                <li> <strong>NIM</strong>: Nomor identifikasi unik yang diberikan kepada setiap mahasiswa.
+                </li>
+                <li> <strong>Alamat</strong>: Alamat tempat tinggal mahasiswa.</li>
+                <li> <strong>Tanggal Lahir</strong>: Tanggal lahir mahasiswa.</li>
+            </ul>
+            Atribut ini mendeskripsikan lebih detail tentang setiap mahasiswa dalam sistem, memungkinkan
+            kita untuk menyimpan informasi penting yang berhubungan dengan mereka.
+        </p>
+
+        <!-- Relasi -->
+        <h3>3. Relasi</h3>
+        <p class="indent">
+            Relasi menggambarkan hubungan antara dua atau lebih entitas dalam basis data. Relasi ini
+            menunjukkan bagaimana entitas satu berinteraksi atau terhubung dengan entitas lain dalam
+            sistem. Dalam ERD, relasi biasanya digambarkan dengan bentuk wajik atau diamond, dan
+            dihubungkan dengan entitas yang berhubungan.
+        </p>
+
+        <p class="indent">
+            Contoh relasi antara entitas Mahasiswa dan Mata Kuliah adalah relasi **"Mengambil"**. Relasi
+            ini menunjukkan bahwa seorang mahasiswa dapat mengambil banyak mata kuliah, dan satu mata
+            kuliah dapat diambil oleh banyak mahasiswa. Relasi ini bersifat banyak-ke-banyak
+            (many-to-many). Relasi ini penting untuk menggambarkan bagaimana entitas saling terhubung,
+            serta bagaimana data dapat diproses atau dimanipulasi dalam sistem.
+        </p>
+    </div>
+</div>
+
 
                 <!-- Tugas Pertemuan Ke-3 -->
                 <div class="card">

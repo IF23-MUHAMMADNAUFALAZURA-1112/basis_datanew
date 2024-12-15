@@ -117,3 +117,12 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Mengatur ukuran gambar agar seragam */
+.image-container img {
+    max-width: 50%;  /* Menyesuaikan lebar gambar dengan lebar kontainer */
+    height: auto;     /* Menjaga rasio aspek gambar */
+    display: block;   /* Menghindari ruang kosong di bawah gambar */
+    margin-left: auto;  /* Meratakan gambar ke kiri dan kanan */
+    margin-right: auto;
+}
