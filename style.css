@@ -126,3 +126,25 @@ footer a:hover {
     margin-left: auto;  /* Meratakan gambar ke kiri dan kanan */
     margin-right: auto;
 }
+
+/* Responsif untuk layar lebih kecil dari 768px */
+@media (max-width: 768px) {
+    .image-text-container {
+        flex-direction: column;  /* Mengubah gambar dan teks menjadi vertikal */
+        align-items: flex-start;
+    }
+
+    .image-text-container img {
+        width: 100%;  /* Membuat gambar responsif dan memenuhi lebar layar */
+        margin-left: 0;  /* Menghilangkan margin kiri */
+    }
+
+    .container {
+        padding: 10px;  /* Mengurangi padding agar konten lebih padat pada layar kecil */
+    }
+
+    .card-body h3 {
+        font-size: 18px;  /* Menurunkan ukuran font di perangkat kecil */
+    }
+}
+

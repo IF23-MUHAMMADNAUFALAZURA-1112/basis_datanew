@@ -18,7 +18,7 @@
                 <!-- Pertemuan Ke-1 -->
                 <h2>Basis Data</h2>
                 <p class="penulis">
-                    Ditulis oleh <a href="#">Muhammad Naufal Azura</a> pada 28 September 2024
+                    Ditulis oleh <i>Muhammad Naufal Azura,</i> pada 28 September 2024
                 </p>
                 <p>
                     Sebelumnya sudah ada yang tau belum apa itu basis data, Basis data adalah kumpulan data yang
@@ -44,7 +44,8 @@
                                 membuka peluang karir yang luas dan memungkinkan pengembangan aplikasi serta analisis
                                 data dalam skala besar.
                             </p>
-                            <img src="basisdata/tandatanya.jpeg" alt="Ilustrasi Basis Data">
+                            <img src="basisdata/tandatanya.jpeg" alt="Ilustrasi Basis Data" style="width: 30%; height: auto;">
+
                         </div>
                         <h3>2. Apa itu Basis Data</h3>
                         <div class="image-text-container">
@@ -208,10 +209,10 @@
                             </figure>
                         </section>
 
-                <!-- Pertemuan Ke-5 -->
+                <!-- Pertemuan Ke-8 -->
                 <div class="card">
                     <div class="card-header">
-                        <h3>Tugas Pertemuan Ke-5</h3>
+                        <h3>Tugas Pertemuan Ke-8</h3>
                     </div>
                     <div class="card-body">
                         <h3>1. Pengertian Denormalisasi</h3>
@@ -220,18 +221,114 @@
                                 <br>
                                 <strong>Denormalisasi</strong> adalah kebalikan dari proses normalisasi. Dimana denormalisasi adalah proses yang dilakukan pada basis data yang sudah di normalisasi, 
                                 dengan cara memodifikasi suatu tatanan basis data dan mengabaikan kerangkapan data untuk meningkatkan kinerja basis data. Pada satu sisi denormalisasi dapat menyebabkan redundansi yang lebih besar, bahkan dapat mengurangi fleksibilitas basis data untuk perkembangan penggunaan di masa yang akan datang.
-                                Namun denormalisasi juga dapat mempercepat pemanggilan data, meskipun dapat memperlambat proses update data.<a href="https://youtu.be/R6bJjcXc7bY?feature=shared" target="_blank">Contoh
-                                penerapan ERD intersection
+                                Namun denormalisasi juga dapat mempercepat pemanggilan data, meskipun dapat memperlambat proses update data.<a href="https://youtu.be/n6dVHv27hUU?feature=shared" target="_blank">Contoh
+                                penerapan ERD Normalisasi pada Perpustakaan
                                 klik di sini</a>.
                             </p>
                             <br>
                             <!-- Menyisipkan gambar untuk normalisasi -->
                             <figure style="text-align: center;">
-                                <img src="basisdata/denormalisasi.png" alt="Ilustrasi Normalisasi Basis Data"
+                                <img src="basisdata/normalisasi.png" alt="Ilustrasi Normalisasi Basis Data"
                                     style="width: 30%; height: auto; display: block; margin: 0 auto;">
                                 <figcaption style="font-size: 14px; color: #555; margin-top: 10px;">Gambar ERD
-                                    Intersection</figcaption>
+                                    Normalisasi Perpustakaan</figcaption>
                             </figure>
+                        </section>
+<!-- Pertemuan Ke-9 -->
+<div class="card">
+    <div class="card-header">
+        <h3>Pertemuan Ke-9</h3>
+    </div>
+    <div class="card-body">
+        <h2>1. Apa itu SQL?</h2>
+        <p class="indent">
+            <strong>SQL (Structured Query Language)</strong> adalah bahasa yang digunakan untuk mengelola dan memanipulasi data yang tersimpan dalam sistem basis data relasional. SQL memungkinkan kita untuk membuat, membaca, memperbarui, dan menghapus data dalam tabel yang ada. SQL adalah standar internasional yang digunakan untuk berinteraksi dengan berbagai sistem manajemen basis data (DBMS), seperti MySQL, PostgreSQL, Oracle, dan SQL Server.
+        </p>
+        <br>
+
+        <h2>2. Apa itu DDL (Data Definition Language)?</h2>
+        <p class="indent">
+            <strong>DDL (Data Definition Language)</strong> adalah subset dari SQL yang digunakan untuk mendefinisikan struktur database, seperti membuat atau mengubah tabel, skema, dan objek database lainnya. Beberapa perintah DDL yang umum digunakan adalah:
+            <ul>
+                <li><strong>CREATE</strong>: Untuk membuat objek database baru, seperti tabel atau view.</li>
+                <li><strong>ALTER</strong>: Untuk mengubah struktur objek database yang sudah ada.</li>
+                <li><strong>DROP</strong>: Untuk menghapus objek database, seperti tabel atau kolom.</li>
+                <li><strong>TRUNCATE</strong>: Untuk menghapus semua data dalam tabel, namun struktur tabel tetap ada.</li>
+            </ul>
+        </p>
+        <br>
+
+        <h2>3. Apa itu DML (Data Manipulation Language)?</h2>
+        <p class="indent">
+            <strong>DML (Data Manipulation Language)</strong> adalah subset dari SQL yang digunakan untuk memanipulasi data dalam tabel. DML memungkinkan kita untuk melakukan operasi pada data yang sudah ada dalam database. Beberapa perintah DML yang umum digunakan adalah:
+            <ul>
+                <li><strong>SELECT</strong>: Untuk mengambil data dari satu atau lebih tabel.</li>
+                <li><strong>INSERT</strong>: Untuk menambahkan data baru ke dalam tabel.</li>
+                <li><strong>UPDATE</strong>: Untuk memperbarui data yang sudah ada dalam tabel.</li>
+                <li><strong>DELETE</strong>: Untuk menghapus data dari tabel.</li>
+            </ul>
+        </p>
+        <br>
+
+
+        <h2>4. Apa itu DCL (Data Control Language)?</h2>
+        <p class="indent">
+            <strong>DCL (Data Control Language)</strong> adalah subset dari SQL yang digunakan untuk mengontrol akses dan izin terhadap data dalam database. DCL berfokus pada keamanan dan kontrol hak akses. Beberapa perintah DCL yang umum digunakan adalah:
+            <ul>
+                <li><strong>GRANT</strong>: Untuk memberikan izin kepada pengguna atau grup untuk melakukan aksi tertentu pada objek database.</li>
+                <li><strong>REVOKE</strong>: Untuk mencabut izin yang telah diberikan sebelumnya.</li>
+            </ul>
+        </p>
+        <br>
+
+        <h2>5. Apa itu TCL (Transaction Control Language)?</h2>
+        <p class="indent">
+            <strong>TCL (Transaction Control Language)</strong> adalah subset dari SQL yang digunakan untuk mengelola transaksi dalam database. Transaksi adalah unit kerja yang terdiri dari satu atau lebih operasi DML, yang diproses secara atomik. Dengan TCL, kita dapat memastikan konsistensi dan integritas data selama operasi basis data. Beberapa perintah TCL yang umum digunakan adalah:
+            <ul>
+                <li><strong>COMMIT</strong>: Untuk menyimpan perubahan yang telah dilakukan selama transaksi.</li>
+                <li><strong>ROLLBACK</strong>: Untuk membatalkan perubahan yang dilakukan selama transaksi, mengembalikan database ke kondisi sebelumnya.</li>
+                <li><strong>SAVEPOINT</strong>: Untuk menetapkan titik penyimpanan sementara dalam transaksi yang dapat digunakan untuk kembali ke titik tersebut jika diperlukan.</li>
+                <li><strong>SET TRANSACTION</strong>: Untuk mengatur properti dari transaksi, seperti tingkat isolasi.</li>
+            </ul>
+        </p>
+
+    </div>
+</div>
+
+<!-- Pertemuan Ke-10 -->
+<div class="card">
+    <div class="card-header">
+        <h3>Pertemuan Ke-10</h3>
+    </div>
+    <div class="card-body">
+        <h3>1. Apa itu Backup dan Restore dalam Basis Data?</h3>
+        <div class="image-text-container">
+            <p class="indent">
+                Backup dan Restore adalah dua konsep penting dalam pengelolaan basis data untuk memastikan bahwa data tidak hilang dan dapat dipulihkan jika terjadi kegagalan sistem. 
+                <strong>Backup</strong> adalah proses membuat salinan data dari basis data yang dapat digunakan untuk pemulihan, sementara <strong>Restore</strong> adalah proses mengembalikan data dari salinan cadangan (backup) tersebut.
+                Proses ini sangat penting untuk melindungi integritas dan ketersediaan data, terutama untuk aplikasi yang membutuhkan data yang selalu terbarui.
+            </p>
+            <img src="basisdata/backup_restore.png" alt="Ilustrasi Backup dan Restore" style="width: 30%; height: auto;">
+        </div>
+
+        <h3>2. Strategi Backup Basis Data</h3>
+        <div class="image-text-container">
+            <p class="indent">
+                Terdapat beberapa strategi dalam melakukan backup basis data, antara lain:
+                <ul>
+                    <li><strong>Full Backup</strong>: Membuat salinan lengkap dari seluruh basis data.</li>
+                    <li><strong>Incremental Backup</strong>: Membuat salinan hanya dari perubahan yang terjadi sejak backup terakhir.</li>
+                    <li><strong>Differential Backup</strong>: Membuat salinan dari perubahan yang terjadi sejak full backup terakhir.</li>
+                    <li><strong>Cloud Backup</strong>: Menyimpan salinan data di cloud untuk keamanan dan aksesibilitas jarak jauh.</li>
+                </ul>
+            </p>
+            <img src="basisdata/backup_strategies.jpg" alt="Strategi Backup Basis Data" style="width: 30%; height: auto;">
+        </div>
+    </div>
+</div>
+</section>
+
+               
 
             
         </main>
